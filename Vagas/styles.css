@@ -1,0 +1,300 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-bottom: auto;
+    font-family: 'inter', sans-serif;
+    background-image: url(./img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.navbar {
+    background-color: #4295be;
+    padding: 1rem;
+    position: static;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    z-index: 99;
+}
+
+.header-conteudo{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    color: #115595;
+    width: 10rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+/*.pesquisa{
+    height: 2rem;
+    width: 20rem;
+    margin-right: 1rem;
+}*/
+
+.nav-tools{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-tools :first-child{
+    margin-right: 1rem;
+}
+
+.button-login{
+    width: 6rem;
+    height: 2.2rem;
+    background-color: #0084ff;
+    cursor: pointer;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-login:hover{
+    background-color: #6badf8d3;
+}
+
+.button-cadastro{
+    width: 6rem;
+    height: 2.2rem;
+    background-color: #0084ff;
+    cursor: pointer;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-cadastro:hover{
+    background-color: #6badf8d3;
+}
+
+
+nav ul li{
+    color: #fff;
+    margin-right: 2.5rem;
+    font-size: 18pt;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* Ajuste para organizar horizontalmente */
+    align-items: center;
+    margin: 0;
+  }
+
+.container {
+    overflow-y: scroll;
+    display: block;
+    position: fixed; /* Tornar .container fixo na página */
+    left: 0; /* Alinhar o .container à esquerda */
+    top: 15%; /* Ajuste a distância entre o topo da página e o .container */
+    width: 300px; /* Largura desejada do .container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgb(199, 199, 199);
+    background-color: #ffffff;
+}
+
+.filtro {
+    width: 100%;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.fonte-filtro {
+    color: #0077b6;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 4px;
+    margin: 10px auto;
+    border-bottom: 4px solid #0077b6;
+}
+
+.filtro option {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#aplicarFiltros {
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#aplicarFiltros:hover {
+    transition: 0.3s;
+    background-color: #262d8d;
+    color: #ffffff;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgb(87, 87, 201);
+    border-radius: 5px;
+}
+
+/* Estilo do menu de filtros à esquerda */
+.menu {
+    float: left;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.menu h2 {
+    font-size: 18px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Estilo das mini janelas de empresas e vagas */
+.content {
+    margin-left: 320px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.empresa {
+    width: 30%;
+    margin: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.empresa span{
+    display: flex;
+    position: relative;
+}
+
+.empresa h2 {
+    font-size: 24px;
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.star-icon {
+    font-size: 25px;
+    display: inline-block; 
+    padding: 2px;
+}
+
+.bi.bi-star-half{
+   color: blue;
+}
+
+.star-icon::after {
+    font-size: 20px;
+    content: "Favoritar"; 
+    margin-left: 5px; 
+    color: black;
+    border: 2px solid #ccc;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.vaga {
+    margin-top: 10px;
+}
+
+.vaga h3 {
+    font-size: 18px;
+}
+
+.vaga p {
+    margin: 25px;
+    font-size: 18px;
+    color: black;
+}
+
+.simbolos {
+    width: auto;
+    justify-content: space-evenly;
+    margin: 0%;
+}
+
+.simbolo {
+    margin: 0%;
+    color: blue;
+    width: 50%; /* Divide o contêiner ao meio */
+    float: left; /* Alinhar à esquerda */
+    
+}
+
+.simbolo p{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body>
+
+    <div class="page">
+        <form method="POST" class="formCadastro">
+            <h1>Cadastro</h1>
+            <p>Preencha suas infomações pessoais e experiência profissional:</p>
+            
+            <!-- Dados Pessoais -->
+            <div class="section">
+                <h2>Dados Pessoais</h2>
+                <label for="nomeCompleto">CPF*</label>
+                <input type="text" id="CPF" placeholder="Digite seu CPF" required />
+
+                <label for="nomeCompleto">Nome Completo*</label>
+                <input type="text" id="nomeCompleto" placeholder="Digite seu nome completo" required />
+
+                <label for="email">Endereço de E-mail*</label>
+                <input type="email" id="email" placeholder="Digite seu endereço de e-mail" required />
+
+                <label for="telefone">Número de Telefone*</label>
+                <input type="tel" id="telefone" placeholder="Digite seu número de telefone" required />
+
+                <label for="endereco">Endereço*</label>
+                <input type="text" id="endereco" placeholder="Digite seu endereço" />
+            </div>
+
+            <!-- Objetivo (Opcional) -->
+            <div class="section">
+                <h2>Objetivo (Opcional)</h2>
+                <textarea id="objetivo" rows="4" placeholder="Digite seu objetivo profissional"></textarea>
+            </div>
+
+            <!-- Perfil (Opcional) -->
+            <div class="section">
+                <h2>Sobre Você (Opcional)</h2>
+                <textarea id="resumo" rows="4" placeholder="Digite um resumo ou perfil profissional"></textarea>
+            </div>
+
+            <!-- Deficiência (Opcional) -->
+            <div class="section">
+                <h2>Deficiência</h2>
+                <label for="tipoDeficiencia">Tipo de Deficiência*</label>
+                <select id="tipoDeficiencia" required>
+                    <option value="" selected>Selecione o tipo de deficiência</option>
+                    <option value="Física">Física</option>
+                    <option value="Auditiva">Auditiva</option>
+                    <option value="Visual">Visual</option>
+                    <option value="Intelectual">Intelectual</option>
+                </select>
+
+                <label for="maisSobreDeficiencia">Descreva sua deficiência (Opcional)</label>
+                <textarea id="maisSobreDeficiencia" rows="4" placeholder="Fale mais sobre sua deficiência"></textarea>
+            </div>
+
+            <!-- Experiência Profissional -->
+            <div class="section">
+                <h2>Experiência Profissional</h2>
+
+                <div class="experiencia">
+                    <label for="empresa1">Nome da Empresa*</label>
+                    <input type="text" id="empresa1" placeholder="Nome da empresa" required />
+
+                    <label for="localizacao1">Localização*</label>
+                    <input type="text" id="localizacao1" placeholder="Localização da empresa" required />
+
+                    <label for="peridoexp">Período de Experiência*</label>
+                    <input type="text" id="periodoexp" placeholder="Tempo de trabalho na empresa" required />
+
+                    <label for="cargo1">Cargo*</label>
+                    <input type="text" id="cargo1" placeholder="Seu cargo na empresa" required />
+
+                    <label for="responsabilidades1">Responsabilidades e Realizações*</label>
+                    <textarea id="responsabilidades1" rows="4" placeholder="Descreva suas responsabilidades e realizações" required></textarea>
+                </div>
+
+            </div>
+
+            <!-- Educação -->
+            <div class="section">
+                    <h2>Escolaridade</h2>
+                <div class="educacao">
+                    <label for="grauObtido1">Grau de Escolaridade*</label>
+                    <input type="text" id="grauObtido1" placeholder= "Grau de Escolaridade" required />
+
+                    <label for="instituicao1">Instituição*</label>
+                    <input type="text" id="instituicao1" placeholder="Nome da instituição" required />
+
+                    <label for="datainicio1">Data de Início*</label>
+                    <input type="text" id="dataConclusao1" placeholder="Data de Início" required />
+
+                    <label for="dataConclusao1">Data de Conclusão*</label>
+                    <input type="text" id="dataConclusao1" placeholder="Data de conclusão" required />
+
+                    <label for="areasEstudo1">Áreas de Estudo*</label>
+                    <input type="text" id="areasEstudo1" placeholder="Áreas de estudo relevantes" required />
+                </div>
+
+            </div>
+
+            <!-- Habilidades -->
+            <div class="section">
+                <h2>Habilidades</h2>
+                <textarea id="habilidades" rows="4" placeholder="Destaque suas habilidades relevantes"></textarea>
+            </div>
+
+            <!-- Certificações e Treinamentos (Opcional) -->
+            <div class="section">
+                <h2>Certificações e Treinamentos (Opcional)</h2>
+                <textarea id="certificacoes" rows="4" placeholder="Liste certificações e treinamentos relevantes"></textarea>
+            </div>
+
+            <!-- Idiomas (Opcional) -->
+            <div class="section">
+                <h2>Idiomas (Opcional)</h2>
+                <!-- Adicione mais campos de idiomas conforme necessário -->
+                <div class="idiomas">
+                    <label for="idioma1">Idioma*</label>
+                    <select id="idioma1" required>
+                        <option value="" selected>Selecione um Idioma</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Mandarim">Mandarim</option>
+                        <option value="Espanhol">Espanhol</option>
+                        <option value="Francês">Francês</option>
+                        <option value="Japonês">Japonês</option>
+                        <option value="Alemão">Alemão</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+            
+                    <label for="proficiencia1">Nível no Idioma*</label>
+                    <select id="proficiencia1" required>
+                        <option value="" selected>Selecione o Nível no Idioma</option>
+                        <option value="Básico">Básico</option>
+                        <option value="Intermediário">Intermediário</option>
+                        <option value="Avançado">Avançado</option>
+                    </select>
+                </div>
+                <!-- Adicione mais campos de idiomas conforme necessário -->
+            </div>
+
+            <!-- Prêmios e Reconhecimentos (Opcional) -->
+            <div class="section">
+                <h2>Prêmios e Reconhecimentos (Opcional)</h2>
+                <textarea id="premios" rows="4" placeholder="Liste prêmios e reconhecimentos profissionais"></textarea>
+            </div>
+
+            <!-- Currículo (Opcional) -->
+            <div class="section">
+            <h2>Currículo</h2>
+            <label for="curriculo">Envie seu currículo (PDF ou Word)*</label>
+             <input type="file" id="curriculo" accept=".pdf, .doc, .docx" />
+            </div>
+
+            <!-- Botão de envio -->
+            <input type="submit" value="Cadastrar" class="btn cadastrar" />
+        </form>
+    </div>
+</body>
+</html>

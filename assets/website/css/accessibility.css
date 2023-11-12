@@ -1,0 +1,66 @@
+.box-access-univ{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: initial;
+    right: 0px;
+    top: 45%;
+    border-radius: 8px 0 0 8px;
+    z-index: 9999;
+    bottom: initial;
+    transform: translateY(calc(-50% - 10px));
+}
+.fas-access-pcd{
+    background-color: rgb(255 255 255 / 65%);
+    border: 5px solid rgb(255 255 255 / 65%);
+}
+
+/*contrast-black */
+#contrast-black:not(.no-contrast),
+#contrast-black header:not(.no-contrast),
+#contrast-black nav:not(.no-contrast),
+#contrast-black footer:not(.no-contrast),
+#contrast-black section:not(.no-contrast),
+#contrast-black div:not(.no-contrast),
+#contrast-black button:not(.no-contrast),
+#contrast-black h1:not(.no-contrast),
+#contrast-black h2:not(.no-contrast),
+#contrast-black h3:not(.no-contrast),
+#contrast-black h4:not(.no-contrast),
+#contrast-black h5:not(.no-contrast),
+#contrast-black a:not(.no-contrast),
+#contrast-black p:not(.no-contrast),
+#contrast-black span:not(.no-contrast) {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+    background-image: none !important; }
+#contrast-black section:not(.no-contrast),
+#contrast-black .div-ads:not(.no-contrast) { border: 3px solid #fff !important; }
+
+/*contrast-white */
+#contrast-white:not(.no-contrast),
+#contrast-white header:not(.no-contrast),
+#contrast-white nav:not(.no-contrast),
+#contrast-white footer:not(.no-contrast),
+#contrast-white section:not(.no-contrast),
+#contrast-white div:not(.no-contrast),
+#contrast-white button:not(.no-contrast),
+#contrast-white h1:not(.no-contrast),
+#contrast-white h2:not(.no-contrast),
+#contrast-white h3:not(.no-contrast),
+#contrast-white h4:not(.no-contrast),
+#contrast-white h5:not(.no-contrast),
+#contrast-white a:not(.no-contrast),
+#contrast-white p:not(.no-contrast),
+#contrast-white span:not(.no-contrast) {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: #000 !important;
+    background-image: none !important; }
+#contrast-white section:not(.no-contrast),
+#contrast-white .div-ads:not(.no-contrast) { border: 3px solid #000 !important; }
+
+/*contrast-black or contrast-white*/
+#contrast-black i:not(.no-contrast),
+#contrast-white i:not(.no-contrast){ color: var(--secondary) !important; }

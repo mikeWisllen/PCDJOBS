@@ -1,0 +1,33 @@
+header, .section-blog-destaques {
+  background-image: url("/assets/website/img/embacado-artistico.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+footer { border-color: var(--secondary); }
+
+.section-vagas-destaque {
+  background-color: #FFF;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-mapa {
+  background-image: url('/assets/website/img/bg-section-mapa.webp');
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.section-ajudamos-empresa {
+  background-color: #000080;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-subscribe { background: #023047; }
+
+.img-carousel { width: auto; height: 100px; object-fit: contain; }
+.card-clientes{ width: 140px; height: 140px; }
+.card-img-clientes { max-height: 85%; max-width: 85%; object-fit: contain; }

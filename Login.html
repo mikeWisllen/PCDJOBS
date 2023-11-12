@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="PCDJOBS.png" type="image/png"> <!-- Adicione esta linha para o ícone da aba -->
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="header-conteudo">
+                <a href="./index.html"><img src="./Cursos/img/PCDJOBS.png" alt="Logo do site - PCD Jobs" class="logo"></a>
+        
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Home</li></a>
+                    <a href="../vagas.html"><li>Vagas</li></a>
+                    <li>Empresas</li>
+                    <li>Contatos</li>
+                </ul>
+            </nav>
+            
+            <!-- <input type="search" placeholder=" 🔎  pesquisar por vagas" class="pesquisa"> -->
+
+            <!--<div class="nav-tools">
+                <a href="../Login.html" ><button class="button-login">Login</button></a>
+                <a href="../form.html"><button class="button-cadastro">Cadastre-se</button></a>
+            </div>-->
+        </div>
+    </header>
+
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <div class="login-container">
+                <img src="PCDJOBS.jpg" alt="Imagem de login" class="login-image">
+                <h1>Login</h1>
+            </div>
+            <p>Digite os seus dados de acesso nos campos abaixo.</p>
+            <label for="loginNumber">Login</label>
+            <input type="text" id="loginNumber" placeholder="Digite seu CPF ou CNPJ" />
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" />
+            <a href="senha.html" class="forgot-password">Esqueceu sua senha?</a>
+            <input type="submit" value="Acessar" class="btn acessar" />
+            <a href="form.html" class="register">Novo no Site? Cadastre-se!</a>
+        </form>
+    </div>
+    <script src="Login.js"></script>
+    
+</body>
+</html>

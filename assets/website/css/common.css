@@ -1,0 +1,39 @@
+/* theme default */
+:root {
+  --primary: #F7981D; --primary-dark: #1E90FF;
+  --secondary:#1E90FF;
+  --tertiary: #1E90FF; --tertiary-dark: #1E90FF; }
+
+  body { background: #f5f5f5; }
+  footer { border-top: solid; border-width: 20px; }
+  
+  /* primary */
+  .bg-primary, .text-bg-primary, .btn-primary { background-color: var(--primary) !important; }
+  .text-primary, .nav-link { color: var(--primary) !important; }
+  .border-primary { border-color: var(--primary) !important; }
+  
+  /* primary-dark */
+  .bg-primary-dark { background-color: var(--primary-dark) !important; }
+  .text-primary-dark { color: var(--primary-dark) !important; }
+  .border-primary-dark { border-color: var(--primary-dark) !important; }
+  
+  /* secondary */
+  .bg-secondary, .btn-secondary { background-color: var(--secondary) !important; }
+  .text-secondary { color: var(--secondary) !important; }
+  .border-secondary { border-color: var(--secondary) !important; }
+  
+  /* tertiary */
+  .bg-tertiary, .btn-tertiary { background-color: var(--tertiary) !important; }
+  .text-tertiary { color: var(--tertiary) !important; }
+  .border-tertiary { border-color: var(--tertiary) !important; }
+  
+  /* tertiary-dark */
+  .bg-tertiary-dark { background-color: var(--tertiary-dark) !important; }
+  .text-tertiary-dark { color: var(--tertiary-dark) !important; }
+  
+  .section-contato { border-top: solid; border-width: 50px; }
+  
+  a:not(.no-hover):hover { transform: scale(1.1) !important; }
+  button:not(.no-hover):hover { transform: scale(1.1) !important; }
+  svg:not(.no-hover):hover, i:not(.no-hover):hover { color: var(--primary) !important; opacity: 0.9; }
+  .fs-7 { font-size: 0.875rem; }
